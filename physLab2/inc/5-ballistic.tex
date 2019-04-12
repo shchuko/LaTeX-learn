@@ -2,7 +2,7 @@
 \section[Визуализация баллистического движения]{Визуализация баллистического движения}
 
 Требуется визуализировать движение тела, брошенного под углом к горизонту с учетем сопротивления ветра.
-Для упрощения модели сопротивление ветра задается константной силой, направленной против направления проекции начальной скорости тела на оcь Ox.
+Для упрощения модели сопротивление ветра задается постоянной силой, направленной против направления проекции начальной скорости тела на оcь Ox.
 
 Имеем уравнения движения тела в проекциях на оси:
 \begin{equation*}
@@ -30,7 +30,7 @@
     \begin{aligned}
         &Oy: \; ma_{y} = -mg; \;\; 
         a_{y} = -g; \\
-        &Ox: \; ma_{x} = -F_{\text{m}}; \;\;
+        &Ox: \; ma_{x} = -F_{\text{сопр}} \;\;
         a_{x} = -\frac{F_{\text{сопр}}}{m} 
     \end{aligned}
 \end{equation*}
@@ -49,7 +49,7 @@
         \begin{aligned}
             &x(0) = 0 \\
             &x'(0) = v_{0} \cdot Cos(\alpha) \\
-            &y''(t) = \frac{-F_{\text{сопр}}}{m}
+            &x''(t) = \frac{-F_{\text{сопр}}}{m}
         \end{aligned}
     \right.; \;\;\;\;\;\;\;\;\;
     \left\{
@@ -62,13 +62,14 @@
 
 \newpage
 Моделируем полет тела в Wolfram Mathematicа. 
-Ипользуем инструменты: 
-\textbf{NDSolve} (для численного решения систем дифференциальных уравнений), 
-\textbf{Evaluate} (для интерполяции дискретных значений функций),
-\textbf{ParametricPlot} (для построения графика параметрически заданной функции движения тела).\\[10pt]
+Ипользуем инструменты 
+\textbf{NDSolve}, 
+\textbf{Evaluate},
+\textbf{ParametricPlot}\\
 
 \textit{Листинг программы Matematica:}
-\begin{lstlisting}
+\begin{figure}[ht]
+    \begin{lstlisting}
 (* Исходные параметры *)
 v = 28.4;
 angle = Pi/3;
@@ -95,9 +96,10 @@ ParametricPlot[
     {t, 0, 5},
     AxesLabel -> {x, y}
 ] 
-\end{lstlisting}
-
+    \end{lstlisting} 
+\end{figure}\\
+\textit{Полученный график:}
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.6\linewidth]{5-ballistic.png}
+\includegraphics[width=0.4\linewidth]{5-ballistic.png}
 \end{figure}

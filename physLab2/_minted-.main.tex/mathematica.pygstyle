@@ -1,0 +1,77 @@
+
+\makeatletter
+\def\PYGmathematica@reset{\let\PYGmathematica@it=\relax \let\PYGmathematica@bf=\relax%
+    \let\PYGmathematica@ul=\relax \let\PYGmathematica@tc=\relax%
+    \let\PYGmathematica@bc=\relax \let\PYGmathematica@ff=\relax}
+\def\PYGmathematica@tok#1{\csname PYGmathematica@tok@#1\endcsname}
+\def\PYGmathematica@toks#1+{\ifx\relax#1\empty\else%
+    \PYGmathematica@tok{#1}\expandafter\PYGmathematica@toks\fi}
+\def\PYGmathematica@do#1{\PYGmathematica@bc{\PYGmathematica@tc{\PYGmathematica@ul{%
+    \PYGmathematica@it{\PYGmathematica@bf{\PYGmathematica@ff{#1}}}}}}}
+\def\PYGmathematica#1#2{\PYGmathematica@reset\PYGmathematica@toks#1+\relax+\PYGmathematica@do{#2}}
+
+\expandafter\def\csname PYGmathematica@tok@vc\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.36,0.56,0.40}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@cm\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.67,0.67}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@vg\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.47,0.69}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@vi\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.47,0.69}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@vm\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.47,0.69}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@ch\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.67,0.67}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@il\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.71,0.42,0.29}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@cs\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.67,0.67}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@cp\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.67,0.67}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@o\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.33,0.33,0.33}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@s2\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@nb\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.21,0.25,0.26}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@ne\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.27,0.42}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@nf\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.43,0.52,0.07}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@si\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@nt\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.43,0.52,0.07}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@nv\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.47,0.69}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@dl\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@m\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.71,0.42,0.29}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@ow\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.33,0.33,0.33}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@sx\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@bp\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.21,0.25,0.26}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@c1\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.67,0.67}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@fm\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.43,0.52,0.07}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@c\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.67,0.67}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@mf\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.71,0.42,0.29}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@err\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.33,0.33,0.33}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@mb\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.71,0.42,0.29}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@ss\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@sr\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@mo\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.71,0.42,0.29}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@mi\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.71,0.42,0.29}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@mh\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.71,0.42,0.29}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@cpf\endcsname{\let\PYGmathematica@it=\textit\def\PYGmathematica@tc##1{\textcolor[rgb]{0.67,0.67,0.67}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@p\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.33,0.33,0.33}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@s\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@sh\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@sc\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@sb\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@sa\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@s1\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@se\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+\expandafter\def\csname PYGmathematica@tok@sd\endcsname{\def\PYGmathematica@tc##1{\textcolor[rgb]{0.29,0.60,0.62}{##1}}}
+
+\def\PYGmathematicaZbs{\char`\\}
+\def\PYGmathematicaZus{\char`\_}
+\def\PYGmathematicaZob{\char`\{}
+\def\PYGmathematicaZcb{\char`\}}
+\def\PYGmathematicaZca{\char`\^}
+\def\PYGmathematicaZam{\char`\&}
+\def\PYGmathematicaZlt{\char`\<}
+\def\PYGmathematicaZgt{\char`\>}
+\def\PYGmathematicaZsh{\char`\#}
+\def\PYGmathematicaZpc{\char`\%}
+\def\PYGmathematicaZdl{\char`\$}
+\def\PYGmathematicaZhy{\char`\-}
+\def\PYGmathematicaZsq{\char`\'}
+\def\PYGmathematicaZdq{\char`\"}
+\def\PYGmathematicaZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYGmathematicaZat{@}
+\def\PYGmathematicaZlb{[}
+\def\PYGmathematicaZrb{]}
+\makeatother
+

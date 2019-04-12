@@ -1,0 +1,48 @@
+\usepackage[
+    a4paper, 
+    mag=1000, 
+    left=2.5cm, 
+    right=1cm, 
+    top=2cm, 
+    bottom=2cm, 
+    headsep=0.7cm, 
+    footskip=1cm
+]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings} 
+\usepackage{caption}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+
+\lstset{ % Настройки вида листинга
+	inputencoding=utf8, 
+	extendedchars=\true, 		% поддержка кириллицы 
+	keepspaces = true, 			% поддержка пробелов 
+	language=mathematica,       % выбор языка для подсветки 
+	basicstyle=\small\sffamily, % размер и начертание шрифта для подсветки кода
+	numbers=left,               % где поставить нумерацию строк (слева\справа)
+	numberstyle=\small,         % размер шрифта для номеров строк
+	stepnumber=1,               % размер шага между двумя номерами строк
+	numbersep=7pt,              % как далеко отстоят номера строк от подсвечиваемого кода
+	showspaces=false,           % показывать или нет пробелы специальными отступами
+	showstringspaces=false,     % показывать или нет пробелы в строках
+	showtabs=false,             % показывать или нет табуляцию в строках
+	frame=false,               	% рисовать рамку вокруг кода
+	tabsize=2,                  % размер табуляции по умолчанию равен 2 пробелам
+	captionpos=t,               % позиция заголовка вверху [t] или внизу [b] 
+	breaklines=true,            % автоматически переносить строки (да\нет)
+	breakatwhitespace=false,    % переносить строки только если есть пробел
+}
+
+\sloppy             % Избавляемся от переполнений
+\hyphenpenalty=1000 % Частота переносов
+\clubpenalty=10000  % Запрещаем разрыв страницы после первой строки абзаца
+\widowpenalty=10000 % Запрещаем разрыв страницы после последней строки абзаца
+

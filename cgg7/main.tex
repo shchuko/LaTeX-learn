@@ -1,0 +1,25 @@
+\documentclass[a4paper, 14pt, report]{ncc}
+\input{preamble} 
+
+\begin{document}
+
+\def\chaptername{Часть}
+\def\contentsname{Содержание}
+
+\input{inc/1-titlepage.tex}
+
+\tableofcontents
+\clearpage	
+
+
+\chapter[Цели и задачи]{Цели и задачи}
+\input{inc/2-intro.tex}
+
+\chapter[Практическая часть работы]{Практическая часть работы}
+\input{inc/3-cube1.tex}
+\input{inc/4-cube2.tex}
+
+\chapter[Результаты]{Результаты}
+\input{inc/5-results.tex}
+
+\end{document}				
